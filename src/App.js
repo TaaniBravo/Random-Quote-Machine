@@ -8,6 +8,17 @@ const App = () => {
       <Container>
         <QuoteBox />
       </Container>
+
+      <footer id="footer">
+        Taani Maama -{" "}
+        <a
+          href="https://github.com/TaaniBravo/Random-Quote-Machine"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub Code
+        </a>
+      </footer>
     </div>
   );
 };
