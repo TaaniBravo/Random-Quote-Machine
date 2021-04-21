@@ -1,0 +1,15 @@
+#author {
+  text-align: right;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: block !important;
+  margin-left: auto;
+}
