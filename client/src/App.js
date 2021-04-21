@@ -1,9 +1,12 @@
 import QuoteBox from "./components/QuoteBox";
+import { Container } from "react-bootstrap";
 
 const App = () => {
   return (
     <main className="App">
-      <QuoteBox />
+      <Container>
+        <QuoteBox />
+      </Container>
     </main>
   );
 };

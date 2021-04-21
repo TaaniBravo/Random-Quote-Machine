@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
 
 const QuoteBox = () => {
   const [state, setState] = useState({
@@ -22,6 +23,9 @@ const QuoteBox = () => {
     <div id="quote-box">
       <p>{state.content}</p>
       <p>{state.author}</p>
+      <i class="fab fa-tumblr-square"></i>
+      <i class="fab fa-twitter-square"></i>
+      <Button>New Quote</Button>
     </div>
   );
 };
