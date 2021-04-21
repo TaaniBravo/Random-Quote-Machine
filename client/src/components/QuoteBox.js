@@ -29,15 +29,17 @@ const QuoteBox = () => {
           content: data.content,
           author: data.author
         });
+
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
+        document.querySelector(".App").style.backgroundColor =
+          "#" + randomColor;
       });
   };
 
   return (
     <div id="quote-box">
-      <p id="text">
-        <span id="quote-symbol">''</span>
-        {state.content}
-      </p>
+      <p id="text">{state.content}</p>
       <p id="author">- {state.author}</p>
       <div className="button-container">
         <a
@@ -47,14 +49,6 @@ const QuoteBox = () => {
           rel="noreferrer"
         >
           <i class="fab fa-twitter-square"></i>
-        </a>
-        <a
-          href="https://twitter.com/intent/tweet"
-          id="tweet-quote"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i class="fab fa-tumblr-square"></i>
         </a>
         <Button id="new-quote" onClick={handleClick}>
           New Quote
